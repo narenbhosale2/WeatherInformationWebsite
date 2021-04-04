@@ -1,0 +1,18 @@
+{
+  "name": "liveweatherapp",
+  "version": "1.0.0",
+  "description": "This is for Live Weather App",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Narendra Bhosale",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "hbs": "^4.1.1",
+    "node-fetch": "^2.6.1",
+    "request": "^2.88.2"
+  }
+}

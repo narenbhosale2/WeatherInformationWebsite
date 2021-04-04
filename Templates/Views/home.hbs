@@ -1,0 +1,50 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poiret+One">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.9/css/weather-icons.min.css">
+      <link rel="stylesheet" href="/css/home.css" type="text/css">
+    </head>
+    <body>
+        <div class="api">
+            <div><h3> Using Open Weather website !!!</h3><a target="_blank" title="To visit weather api site" href="https://home.openweathermap.org/users/sign_up">Click here</a>
+            </div>
+        </div>
+  
+        <div class="container">
+          <h2 class="heading">Please enter your city name</h2>
+            <form method="GET" action="/">
+              <input type="text" name="city">
+              <input type="submit">
+            </form>
+        <div class="weather-info" style="margin-top: 10px;">
+
+              <article id="cityError"  class="widget hide">
+                <div class="error-msg" style="color: red;">{{errorMessage}}</div>               
+              </article>
+
+              <article id="citydata"  class="widget">
+                <div class="weatherIcon"><i class="wi wi-day-cloudy"></i></div>
+                <div class="weatherInfo">
+                  <div class="temperature"><span>{{temp}}</span></div>
+                  <div class="description">    
+                    <div class="weatherCondition" >{{weatherCondition}}</div>    
+                    <div class="place">{{city}}</div>
+                  </div>
+                </div>
+                <div class="date">{{date}}</div>
+              </article>
+            </div>
+        </div>
+
+        {{> footer }}
+
+       <script>
+       </script>
+     
+    </body>
+
+</html>
+
+
